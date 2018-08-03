@@ -1,0 +1,203 @@
+@media only screen and (max-width: 1200px) {
+	html {
+		font-size: 1em;
+	}
+	body {
+		font-size: 16px;
+	}
+	.navbar,
+	.container {
+		width: 100%;
+	}
+	header {}
+	main {
+		padding-left: 60px;
+		/* padding-right: 60px1 */
+	}
+	.modal-login {
+		width: 80% !important;
+	}
+	.mobile-menu {
+		display: none;
+	}
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+	html {
+		font-size: .825em;
+	}
+	body {
+		font-size: 14px;
+	}
+	header {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	header {}
+	main {
+		padding-left: 60p1;
+		/* padding-right: 60p1; */
+	}
+	.navbar,
+	.container {
+		width: 100%;
+	}
+	.toggle-mobile {
+		display: block;
+	}
+	.nav-content {
+		display: none;
+	}
+	.modal-login {
+		width: 80% !important;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	html {
+		font-size: .625em;
+	}
+	body {
+		font-size: 12px;
+	}
+	header {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	main {
+		padding-left: 10px;
+		/* padding-right: 10px; */
+	}
+	.toggle-mobile {
+		display: block;
+	}
+	.nav-content {
+		display: none;
+	}
+	.navbar,
+	.container,
+	.row {
+		width: 100%;
+	}
+	.mainbar {
+		width: 100%;
+		padding: 5px;
+		border-right: 0px solid #ddd;
+	}
+	.sidebar {
+		width: 100%;
+		padding: 5px;
+	}
+	.comment-head-title {
+		width: 70px;
+	}
+	.comment-head-line {
+		top: -18px;
+	}
+	.modal-login {
+		width: 80% !important;
+	}
+}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+	html {
+		font-size: .5em;
+	}
+	body {
+		font-size: 10px;
+	}
+	header,
+		{
+		width: 420px;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.nav-content {
+		display: none;
+	}
+	.navbar,
+	.container,
+	.row {
+		width: 100%;
+	}
+	.mainbar {
+		width: 100%;
+		padding: 5px;
+		border-right: 0px solid #ddd;
+	}
+	.sidebar {
+		width: 100%;
+		padding: 5px;
+	}
+	.comment-head-title {
+		width: 70px;
+	}
+	.comment-head-line {
+		top: -18px;
+	}
+	.input,
+	.textarea {
+		min-width: 180px;
+	}
+	.toggle-mobile {
+		display: block;
+	}
+	.modal-login {
+		width: 80% !important;
+	}
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+	html {
+		font-size: .4em;
+	}
+	body {
+		font-size: 9px;
+	}
+	header {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	main {
+		padding-left: 10px;
+		/* padding-right: 10px; */
+	}
+	.nav-content {
+		display: none;
+	}
+	.navbar,
+	.container,
+	.row {
+		width: 100%;
+	}
+	.mainbar {
+		padding: 5px;
+		border-right: 0px solid #ddd;
+	}
+	.sidebar {
+		width: 100%;
+		padding: 5px;
+	}
+	.comment-head-title {
+		width: 70px;
+	}
+	.comment-head-line {
+		top: -18px;
+	}
+	.input,
+	.textarea {
+		min-width: 180px;
+	}
+	.toggle-mobile {
+		display: block;
+	}
+	.modal-login {
+		width: 80% !important;
+	}
+}

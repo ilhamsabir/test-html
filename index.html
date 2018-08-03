@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Forum Anak IT</title>
+
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="assets/css/grid.css" rel="stylesheet">
+	<link href="assets/css/modal.css" rel="stylesheet">
+	<link href="assets/css/color.css" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	    crossorigin="anonymous">
+	<style>
+	</style>
+</head>
+
+<body>
+	<!-- header nav -->
+	<header class="bg-brown">
+		<div class="navbar clearfix">
+			<a href="#" class="nav-logo text-white">Forum Anak IT</a>
+			<div class="nav-content">
+				<div class="nav-search">
+					<div class="nav-search-content clearfix">
+						<input type="text" class="nav-search-input" placeholder="Search ...">
+						<button type="submit" class="nav-search-button">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
+				<div class="nav-menu">
+					<ul class="nav-menu-list">
+						<li class="" id="categories-list">
+							<a href="#">Categories</a>
+							<div class="collapse-menu">
+								<ul>
+									<li>
+										<a href="#">Linux</a>
+									</li>
+									<li>
+										<a href="#">Windows</a>
+									</li>
+									<li>
+										<a href="#">MAC OS</a>
+									</li>
+									<li>
+										<a href="#">Android</a>
+									</li>
+									<li>
+										<a href="#">iOS</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#" id="btn-modal" data-type="login">Login</a>
+						</li>
+						<li>
+							<a href="#" id="btn-modal" data-type="register">Register</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<button type="" class="toggle-mobile">
+				<i class="fa fa-bars"></i>
+			</button>
+		</div>
+	</header>
+
+	<!-- main content -->
+	<main>
+		<div class="container clearfix">
+			<div class="col mainbar">
+				<div class="article">
+					<div class="article-title">
+						<h2>Lampu webcam tiba - tiba menyala sendiri tanpa membuka aplikasi webcam</h2>
+					</div>
+					<div class="article-description">
+						<p>Mau tanya akhir - akhir ini webcam sering nyala sendiri. Apakah ada yang tahu penyebabnya dan solusi untuk memperbaiki
+							hal itu ? Apakah ada kemungkinan laptop saya di-hack karena kasus terjadi tiap terkoneksi dengan internet.
+						</p>
+					</div>
+				</div>
+				<div class="comment">
+					<div class="info-head">
+						<div class="info-head-title">
+							<h3>Komentar</h3>
+						</div>
+						<span class="info-head-line"></span>
+					</div>
+					<div class="comment-content" id="comment-data"></div>
+				</div>
+				<div class="comment-action">
+					<div class="info-head">
+						<div class="info-head-title comment-action-title">
+							<h3>Tambahkan Komentar</h3>
+						</div>
+						<span class="info-head-line"></span>
+					</div>
+					<div class="comment-form">
+						<div class="form-group">
+							<input type="text" class="input" placeholder="Name" id="comment-input-name">
+						</div>
+						<div class="form-group">
+							<input placeholder="Email" class="input" id="comment-input-email" type="text">
+						</div>
+						<div class="form-group">
+							<textarea rows="3" cols="40" class="input" placeholder="Komentar Anda" id="comment-input-text"></textarea>
+						</div>
+						<div class="form-group">
+							<button class="btn-default" type="reset" id="reset-comment">Reset</button>
+							<button class="btn-primary" id="submit-comment">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col sidebar">
+				<div class="sidebar-menu">
+					<div class="title">
+						<h3>Diskusi 5 teratas</h3>
+					</div>
+					<div class="list">
+						<ul id="list-top-discuss"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- footer -->
+	<footer></footer>
+
+	<!-- Modal Login -->
+	<div id="modal-login" class="modal">
+		<div class="modal-content modal-login">
+			<span class="close" id="btn-close-modal">&times;</span>
+			<div class="modal-body">
+				<div class="title">
+					<h3>Login</h3>
+				</div>
+				<div class="form-group">
+					<label for="">Email</label>
+					<input type="text" class="input wd100" id="login-email">
+				</div>
+				<div class="form-group">
+					<label for="">Password</label>
+					<input class="input wd100" id="login-password" type="password">
+				</div>
+				<div class="form-group">
+					<button class="btn-primary" id="submit-login">Login</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Registyer -->
+	<div id="modal-register" class="modal">
+		<div class="modal-content modal-login">
+			<span class="close" id="btn-close-modal">&times;</span>
+			<div class="modal-body">
+				<div class="title">
+					<h3>Register</h3>
+				</div>
+				<div class="form-group">
+					<label for="">Name</label>
+					<input type="text" class="input wd100" id="reg-name">
+				</div>
+				<div class="form-group">
+					<label for="">Email</label>
+					<input type="text" class="input wd100" id="reg-email">
+				</div>
+				<div class="form-group">
+					<label for="">Password</label>
+					<input class="input wd100" type="password" id="reg-password">
+				</div>
+				<div class="form-group">
+					<button class="btn-primary" id="submit-reg">Create account</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mobile-menu bg-brown--dark">
+		<div class="mobile-menu-header">
+			<button class="btn-danger" id="mobile-menu-close">
+				<i class="fa fa-times"></i>
+			</button>
+		</div>
+		<div class="mobile-menu-search">
+			<div class="nav-search-content clearfix">
+				<input type="text" class="nav-search-input" placeholder="Search ...">
+				<button type="submit" class="nav-search-button">
+					<i class="fa fa-search"></i>
+				</button>
+			</div>
+		</div>
+		<div class="mobile-menu-link">
+			<ul class="clearfix">
+				<li>
+					<a href="#">Categories</a>
+
+					<div class="mobile-menu-link-secondary">
+						<ul>
+							<li>
+								<a href="#">Linux</a>
+							</li>
+							<li>
+								<a href="#">Windows</a>
+							</li>
+							<li>
+								<a href="#">MAC OS</a>
+							</li>
+							<li>
+								<a href="#">Android</a>
+							</li>
+							<li>
+								<a href="#">iOS</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#" id="btn-modal" data-type="login">Login</a>
+				</li>
+				<li>
+					<a href="#" id="btn-modal" data-type="register">Register</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
